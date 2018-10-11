@@ -6,6 +6,7 @@ PATH
       dotenv-rails
       httparty (>= 0.13.1)
       jquery-rails (>= 3.1.2)
+      pry
       rails (~> 4.2.0)
       uglifier
 

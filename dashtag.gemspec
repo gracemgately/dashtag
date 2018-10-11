@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency "httparty", ">= 0.13.1"
   s.add_dependency "jquery-rails", ">= 3.1.2"
   s.add_dependency "uglifier"
+  s.add_dependency "dotenv-rails"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "dotenv-rails"

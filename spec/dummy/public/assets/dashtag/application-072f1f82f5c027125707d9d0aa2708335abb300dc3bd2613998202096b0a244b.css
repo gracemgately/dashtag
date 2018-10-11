@@ -1,0 +1,439 @@
+/*!
+ * font-awesome-animation - v0.0.6
+ * https://github.com/l-lin/font-awesome-animation
+ * License: MIT
+ */
+
+
+@-webkit-keyframes wrench{0%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}8%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}10%{-webkit-transform:rotate(24deg);transform:rotate(24deg)}18%,20%{-webkit-transform:rotate(-24deg);transform:rotate(-24deg)}28%,30%{-webkit-transform:rotate(24deg);transform:rotate(24deg)}38%,40%{-webkit-transform:rotate(-24deg);transform:rotate(-24deg)}48%,50%{-webkit-transform:rotate(24deg);transform:rotate(24deg)}58%,60%{-webkit-transform:rotate(-24deg);transform:rotate(-24deg)}68%{-webkit-transform:rotate(24deg);transform:rotate(24deg)}75%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes wrench{0%{-webkit-transform:rotate(-12deg);-ms-transform:rotate(-12deg);transform:rotate(-12deg)}8%{-webkit-transform:rotate(12deg);-ms-transform:rotate(12deg);transform:rotate(12deg)}10%{-webkit-transform:rotate(24deg);-ms-transform:rotate(24deg);transform:rotate(24deg)}18%,20%{-webkit-transform:rotate(-24deg);-ms-transform:rotate(-24deg);transform:rotate(-24deg)}28%,30%{-webkit-transform:rotate(24deg);-ms-transform:rotate(24deg);transform:rotate(24deg)}38%,40%{-webkit-transform:rotate(-24deg);-ms-transform:rotate(-24deg);transform:rotate(-24deg)}48%,50%{-webkit-transform:rotate(24deg);-ms-transform:rotate(24deg);transform:rotate(24deg)}58%,60%{-webkit-transform:rotate(-24deg);-ms-transform:rotate(-24deg);transform:rotate(-24deg)}68%{-webkit-transform:rotate(24deg);-ms-transform:rotate(24deg);transform:rotate(24deg)}75%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}}.faa-parent.animated-hover:hover>.faa-wrench,.faa-wrench.animated,.faa-wrench.animated-hover:hover{-webkit-animation:wrench 2.5s ease infinite;animation:wrench 2.5s ease infinite;transform-origin-x:90%;transform-origin-y:35%;transform-origin-z:initial}@-webkit-keyframes ring{0%{-webkit-transform:rotate(-15deg);transform:rotate(-15deg)}2%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}4%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}6%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}8%{-webkit-transform:rotate(-22deg);transform:rotate(-22deg)}10%{-webkit-transform:rotate(22deg);transform:rotate(22deg)}12%{-webkit-transform:rotate(-18deg);transform:rotate(-18deg)}14%{-webkit-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-12deg);transform:rotate(-12deg)}18%{-webkit-transform:rotate(12deg);transform:rotate(12deg)}20%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes ring{0%{-webkit-transform:rotate(-15deg);-ms-transform:rotate(-15deg);transform:rotate(-15deg)}2%{-webkit-transform:rotate(15deg);-ms-transform:rotate(15deg);transform:rotate(15deg)}4%{-webkit-transform:rotate(-18deg);-ms-transform:rotate(-18deg);transform:rotate(-18deg)}6%{-webkit-transform:rotate(18deg);-ms-transform:rotate(18deg);transform:rotate(18deg)}8%{-webkit-transform:rotate(-22deg);-ms-transform:rotate(-22deg);transform:rotate(-22deg)}10%{-webkit-transform:rotate(22deg);-ms-transform:rotate(22deg);transform:rotate(22deg)}12%{-webkit-transform:rotate(-18deg);-ms-transform:rotate(-18deg);transform:rotate(-18deg)}14%{-webkit-transform:rotate(18deg);-ms-transform:rotate(18deg);transform:rotate(18deg)}16%{-webkit-transform:rotate(-12deg);-ms-transform:rotate(-12deg);transform:rotate(-12deg)}18%{-webkit-transform:rotate(12deg);-ms-transform:rotate(12deg);transform:rotate(12deg)}20%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}}.faa-parent.animated-hover:hover>.faa-ring,.faa-ring.animated,.faa-ring.animated-hover:hover{-webkit-animation:ring 2s ease infinite;animation:ring 2s ease infinite;transform-origin-x:50%;transform-origin-y:0;transform-origin-z:initial}@-webkit-keyframes vertical{0%{-webkit-transform:translate(0,-3px);transform:translate(0,-3px)}4%{-webkit-transform:translate(0,3px);transform:translate(0,3px)}8%{-webkit-transform:translate(0,-3px);transform:translate(0,-3px)}12%{-webkit-transform:translate(0,3px);transform:translate(0,3px)}16%{-webkit-transform:translate(0,-3px);transform:translate(0,-3px)}20%{-webkit-transform:translate(0,3px);transform:translate(0,3px)}22%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes vertical{0%{-webkit-transform:translate(0,-3px);-ms-transform:translate(0,-3px);transform:translate(0,-3px)}4%{-webkit-transform:translate(0,3px);-ms-transform:translate(0,3px);transform:translate(0,3px)}8%{-webkit-transform:translate(0,-3px);-ms-transform:translate(0,-3px);transform:translate(0,-3px)}12%{-webkit-transform:translate(0,3px);-ms-transform:translate(0,3px);transform:translate(0,3px)}16%{-webkit-transform:translate(0,-3px);-ms-transform:translate(0,-3px);transform:translate(0,-3px)}20%{-webkit-transform:translate(0,3px);-ms-transform:translate(0,3px);transform:translate(0,3px)}22%{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}}.faa-parent.animated-hover:hover>.faa-vertical,.faa-vertical.animated,.faa-vertical.animated-hover:hover{-webkit-animation:vertical 2s ease infinite;animation:vertical 2s ease infinite}@-webkit-keyframes horizontal{0%{-webkit-transform:translate(0,0);transform:translate(0,0)}6%{-webkit-transform:translate(5px,0);transform:translate(5px,0)}12%{-webkit-transform:translate(0,0);transform:translate(0,0)}18%{-webkit-transform:translate(5px,0);transform:translate(5px,0)}24%{-webkit-transform:translate(0,0);transform:translate(0,0)}30%{-webkit-transform:translate(5px,0);transform:translate(5px,0)}36%{-webkit-transform:translate(0,0);transform:translate(0,0)}}@keyframes horizontal{0%{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}6%{-webkit-transform:translate(5px,0);-ms-transform:translate(5px,0);transform:translate(5px,0)}12%{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}18%{-webkit-transform:translate(5px,0);-ms-transform:translate(5px,0);transform:translate(5px,0)}24%{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}30%{-webkit-transform:translate(5px,0);-ms-transform:translate(5px,0);transform:translate(5px,0)}36%{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);transform:translate(0,0)}}.faa-horizontal.animated,.faa-horizontal.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-horizontal{-webkit-animation:horizontal 2s ease infinite;animation:horizontal 2s ease infinite}@-webkit-keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,100%,50%{opacity:1}25%,75%{opacity:0}}.faa-flash.animated,.faa-flash.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-flash{-webkit-animation:flash 2s ease infinite;animation:flash 2s ease infinite}@-webkit-keyframes bounce{0%,10%,20%,50%,80%{-webkit-transform:translateY(0);transform:translateY(0)}40%,60%{-webkit-transform:translateY(-15px);transform:translateY(-15px)}}@keyframes bounce{0%,10%,20%,50%,80%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}40%,60%{-webkit-transform:translateY(-15px);-ms-transform:translateY(-15px);transform:translateY(-15px)}}.faa-bounce.animated,.faa-bounce.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-bounce{-webkit-animation:bounce 2s ease infinite;animation:bounce 2s ease infinite}@-webkit-keyframes spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}.faa-parent.animated-hover:hover>.faa-spin,.faa-spin.animated,.faa-spin.animated-hover:hover{-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}@-webkit-keyframes float{0%{-webkit-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(-6px);transform:translateY(-6px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes float{0%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}50%{-webkit-transform:translateY(-6px);-ms-transform:translateY(-6px);transform:translateY(-6px)}100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.faa-float.animated,.faa-float.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-float{-webkit-animation:float 2s linear infinite;animation:float 2s linear infinite}@-webkit-keyframes pulse{0%{-webkit-transform:scale(1.1);transform:scale(1.1)}50%{-webkit-transform:scale(0.8);transform:scale(0.8)}100%{-webkit-transform:scale(1.1);transform:scale(1.1)}}@keyframes pulse{0%{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}50%{-webkit-transform:scale(0.8);-ms-transform:scale(0.8);transform:scale(0.8)}100%{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}}.faa-parent.animated-hover:hover>.faa-pulse,.faa-pulse.animated,.faa-pulse.animated-hover:hover{-webkit-animation:pulse 2s linear infinite;animation:pulse 2s linear infinite}.faa-parent.animated-hover:hover>.faa-shake,.faa-shake.animated,.faa-shake.animated-hover:hover{-webkit-animation:wrench 2.5s ease infinite;animation:wrench 2.5s ease infinite}@-webkit-keyframes tada{0%{-webkit-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-8deg);transform:scale(.9) rotate(-8deg)}30%,50%,70%{-webkit-transform:scale(1.3) rotate(8deg);transform:scale(1.3) rotate(8deg)}40%,60%{-webkit-transform:scale(1.3) rotate(-8deg);transform:scale(1.3) rotate(-8deg)}80%{-webkit-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}@keyframes tada{0%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}10%,20%{-webkit-transform:scale(.9) rotate(-8deg);-ms-transform:scale(.9) rotate(-8deg);transform:scale(.9) rotate(-8deg)}30%,50%,70%{-webkit-transform:scale(1.3) rotate(8deg);-ms-transform:scale(1.3) rotate(8deg);transform:scale(1.3) rotate(8deg)}40%,60%{-webkit-transform:scale(1.3) rotate(-8deg);-ms-transform:scale(1.3) rotate(-8deg);transform:scale(1.3) rotate(-8deg)}80%{-webkit-transform:scale(1) rotate(0);-ms-transform:scale(1) rotate(0);transform:scale(1) rotate(0)}}.faa-parent.animated-hover:hover>.faa-tada,.faa-tada.animated,.faa-tada.animated-hover:hover{-webkit-animation:tada 2s linear infinite;animation:tada 2s linear infinite}@-webkit-keyframes passing{0%{-webkit-transform:translateX(-50%);transform:translateX(-50%);opacity:0}50%{-webkit-transform:translateX(0%);transform:translateX(0%);opacity:1}100%{-webkit-transform:translateX(50%);transform:translateX(50%);opacity:0}}@keyframes passing{0%{-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);opacity:0}50%{-webkit-transform:translateX(0%);-ms-transform:translateX(0%);transform:translateX(0%);opacity:1}100%{-webkit-transform:translateX(50%);-ms-transform:translateX(50%);transform:translateX(50%);opacity:0}}.faa-parent.animated-hover:hover>.faa-passing,.faa-passing.animated,.faa-passing.animated-hover:hover{-webkit-animation:passing 3s linear infinite;animation:passing 3s linear infinite}@-webkit-keyframes burst{0%{opacity:.6}50%{-webkit-transform:scale(1.8);transform:scale(1.8);opacity:0}100%{opacity:0}}@keyframes burst{0%{opacity:.6}50%{-webkit-transform:scale(1.8);-ms-transform:scale(1.8);transform:scale(1.8);opacity:0}100%{opacity:0}}.faa-burst.animated,.faa-burst.animated-hover:hover,.faa-parent.animated-hover:hover>.faa-burst{-webkit-animation:burst 3s infinite linear;animation:burst 3s infinite linear}
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.flash-danger {
+	background-color: #EE312D;
+}
+
+.flash-success {
+	background-color: #11AA58;
+}
+
+.flash-notice {
+	background-color: #1A73BA;
+}
+
+.flash-notice, .flash-success, .flash-danger {
+	margin: 5px 300px;
+	padding: 3px 0px;
+	text-align: center;
+	border-radius: 6px;
+}
+.twitter_icon {
+  background:transparent url(/assets/dashtag/twitterBird-d1f4baad6e5a196f2131f836346947ae3892584e3093b851fa9720b6c308f592.png) no-repeat right;
+}
+
+.instagram_icon {
+  background:transparent url(/assets/dashtag/instagram-9f318fc3c3412ced631f752723fdee0f55bab11821ffe5456e85f96aa22ab204.png) no-repeat right;
+}
+
+.twitter_icon, .instagram_icon {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  float: left;
+  background-size: cover;
+  padding-left: 10px;
+}
+
+a.reply {
+  background:transparent url(/assets/dashtag/reply-86f43ca05b375a99212692d60ddce51bf792ba202d5da168c0c33027df7384d4.png) no-repeat right;
+  display:inline-block;
+  height:24px;
+  width:24px;
+}
+
+a.retweet {
+  background:transparent url(/assets/dashtag/retweet-1c10cb73d882b3c753246682d9a6c3b880e5e74516b12a0c8b9d06db63bf7ca8.png) no-repeat right;
+  display:inline-block;
+  height:24px;
+  width:24px;
+}
+
+a.favorite {
+  background:transparent url(/assets/dashtag/favorite-ef2b77bd1deb75f9060e5a29c5534d7c2ff57959c6d2902504fe60cac2132dd4.png) no-repeat right;
+  display:inline-block;
+  height:24px;
+  width:24px;
+}
+
+a.reply:hover {
+  background: url(/assets/dashtag/reply_hover-5d04e91ea07975a68d7687a24745f3cd2acff4576d25bae72bbbbc6ba7d3b82a.png) no-repeat right;
+  height:24px;
+  width:24px;
+}
+
+a.retweet:hover {
+  background: url(/assets/dashtag/retweet_hover-bccb21e88585fcb7184e547ab030a50ec4ee1f5e58e159bb29ef7249d0adf8c0.png) no-repeat right;
+  height:24px;
+  width:24px;
+}
+
+a.favorite:hover {
+  background: url(/assets/dashtag/favorite_hover-7ceef4bcd81e6178cdf730e951987e18bb1bd67ced4a5d9aceffac332a02012c.png) no-repeat right;
+  height:24px;
+  width:24px;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  word-wrap: break-word;
+  color: #FFF;
+  background-color: #EFEFEF;
+  overflow-x: hidden;
+}
+
+body {
+  margin-top: 65px;
+}
+
+#posts-list
+{
+  width: 100%;
+  margin-bottom: -1.875em;
+  width: 100%;
+  margin-left: 2%;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+  letter-spacing: .5px;
+  font-weight: 300;
+  line-height: 2;
+  margin: 0;
+}
+
+a {
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+  font-weight: 200;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a#hashtag-anchor {
+ display: block;
+ position: relative;
+ top: -250px;
+ visibility: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.post-text > iframe {
+  margin-top: 20px;
+}
+
+.youtube-video {
+  height: 200px;
+  margin: 0.5em;
+}
+
+.vine-video {
+  display: block;
+  margin: auto;
+}
+
+.post-container {
+  margin: 5px 5px;
+  width: 30%;
+  text-align: center;
+  width: 92%;
+  float: left;
+  padding: 1.5% .75%;
+  margin: 5px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.post-picture img {
+  width: 60%;
+}
+
+.post-container section {
+    margin: 11px 0 0 0;
+}
+
+.post-text {
+  font-size: 20px;
+}
+
+.post-username {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.post-id {
+  display: none;
+}
+
+.avatar{
+ width: 40px;
+ height: 40px;
+ background-size: cover;
+ border-radius: 25px;
+ -webkit-border-radius: 25px;
+ -moz-border-radius: 25px;
+ }
+
+.post-created-at {
+  font-size: 11px;
+  display: inline-block;
+}
+
+.footer {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#last_page_requested{
+  display:none;
+}
+
+.hashtag-title {
+  text-decoration: none;
+  z-index: 1;
+  background-color: #EFEFEF;
+  position: fixed;
+  top:0; left:0;
+  width: 100%;
+ }
+
+.hashtag-title:hover {
+  background-color: #F6F6F6;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  -ms-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+ }
+
+ /*Default Background Colors*/
+/*ThoughtWorks Magenta*/
+.post-color-1 {
+  background: #B11C54;
+}
+
+/*ThoughtWorks Orange*/
+.post-color-2 {
+  background: #F78F31;
+}
+
+/*ThoughtWorks Turquoise*/
+.post-color-3 {
+  background: #80C9D2;
+}
+
+/*ThoughtWorks Green  */
+.post-color-4 {
+  background: #B5B935;
+}
+
+.load-older-posts {
+  color: black;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.load-older-posts a {
+  color: black;
+  padding: 5px;
+  border: solid 1px;
+  border-radius: 1px;
+  text-decoration: none;
+  background-color: lightgray;
+}
+
+.load-older-posts a:hover {
+  background-color: #EFEFEF;
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  -ms-transition: background-color 0.7s ease-out;
+  transition: background-color 0.7s ease-out;
+}
+
+@media ( min-width: 768px )
+{
+
+    h1 {
+        margin: 5px 0 5px 0;
+    }
+
+    body {
+        margin-top: 85px;
+    }
+    .post-container
+    {
+        width: 45.876%;
+        margin: 5px;
+        padding-bottom: 12.8px;
+    }
+    #posts-list {
+     padding-left: 0;
+    }
+}
+
+@media ( min-width: 992px )
+{
+
+    h1 {
+        margin: 10px 0 10px 0;
+    }
+
+    body {
+        margin-top: 95px;
+    }
+    #posts-list
+    {
+        padding-left: 0;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: -1.875em;
+        margin-top: 115px;
+    }
+
+    .post-container {
+        text-align: center;
+        width: 30%;
+        float: left;
+        margin: 5px;
+    }
+}
+ul.nav {
+  color: red;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0px;
+  padding-top: 5px;
+}
+.nav li {
+	display: inline-block;
+	padding-right: 4px;
+}
+
+.nav a {
+	color: black;
+}
+
+.dashtag-shoutout-colors {
+  color: rgb(38,189,207);
+}
+
+.dashtag-shoutout-colors a {
+   color: rgba(80, 136, 251, 1);
+}
+
+#dashtag-shoutout-header-container {
+  text-align: right;
+  padding-right: 40px;
+  padding-top: 5px;
+  display: inline-block;
+  float: right
+}
+form.settings {
+	margin: auto;
+	width: 650px;
+	margin-top: 30px;
+	background-color: #80C9D2;
+	border-radius: 6px;
+	padding: 60px;
+}
+
+.settings label {
+	display: block;
+	padding: 5px 0px;
+	font-size: 20px;
+	font-weight: 800;
+	letter-spacing: .7px;
+}
+
+.setting-instructions {
+	color: #EAEAEA;
+	font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 5px;
+}
+
+.setting-instructions a {
+	text-decoration: underline;
+}
+
+.error-message, .error-message-next-to-field {
+	color: rgb(238,49,45);
+}
+
+.error-message-next-to-field ul {
+	list-style-type: none;
+	margin: auto;
+	padding: 0px;
+}
+
+.error-message ul {
+	list-style-type: none;
+	padding: 0px;
+	width: 400px;
+	margin: auto;
+}
+
+.settings input {
+	display: block;
+	border-radius: 4px;
+	font-size: 20px;
+	width: 100%;
+	margin: 15px 0px;
+	background-color: #F6F6F6;
+	letter-spacing: 0.5px;
+	font-weight: 300;
+	padding: 6px;
+	border: 0px; 
+}
+
+.field_with_errors input {
+	border: 1px solid rgb(238,49,45);
+}
+
+input[type = "submit"] {
+	cursor: pointer;
+	width: 200px;
+	margin: auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ * require font-awesome
+
+
+
+ */
+

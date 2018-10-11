@@ -10,9 +10,9 @@ require 'capybara/poltergeist'
 require 'shoulda/matchers'
 
 module Dashtag
-  require "factory_girl"
-  FactoryGirl.definition_file_paths = %w(spec/factories/dashtag)
-  FactoryGirl.find_definitions
+  require "factory_bot"
+  FactoryBot.definition_file_paths = %w(spec/factories/dashtag)
+  FactoryBot.find_definitions
 end
 
 # require File.expand_path('../config/application', __FILE__)

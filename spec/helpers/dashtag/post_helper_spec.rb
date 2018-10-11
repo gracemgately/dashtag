@@ -2,14 +2,14 @@ require 'spec_helper'
 
 module Dashtag
   describe PostHelper do
-    let(:twitter_post) { FactoryGirl.create(:post, text: '#helpus "@batman and @robin!" #gothamcity #gotham http://dccomics.com http://www.imdb.com/title/tt0118688/', source: 'twitter') }
+    let(:twitter_post) { FactoryBot.create(:post, text: '#helpus "@batman and @robin!" #gothamcity #gotham http://dccomics.com http://www.imdb.com/title/tt0118688/', source: 'twitter') }
 
-    let(:instagram_post) { FactoryGirl.create(:post, text: '@Julia and @Julian you both should support #JackieRobinsonWest http://jackierobinsonwest.org/', source: 'instagram') }
+    let(:instagram_post) { FactoryBot.create(:post, text: '@Julia and @Julian you both should support #JackieRobinsonWest http://jackierobinsonwest.org/', source: 'instagram') }
 
     describe 'add_post_links' do
-      let(:twitter_post_with_videos) { FactoryGirl.create(:post, text: 'Its #Friday, you aint got no job... https://vine.co/v/MI3PU9Ag9Wu https://www.youtube.com/watch?v=q4tbZ7xnEjk', source: 'twitter') }
+      let(:twitter_post_with_videos) { FactoryBot.create(:post, text: 'Its #Friday, you aint got no job... https://vine.co/v/MI3PU9Ag9Wu https://www.youtube.com/watch?v=q4tbZ7xnEjk', source: 'twitter') }
 
-      let(:instagram_post_with_videos) { FactoryGirl.create(:post, text: 'Video is now live on YouTube enjoy: https://m.youtube.com/watch?v=Qi6wjbKMnRA #lunaFollow', source: 'instagram') }
+      let(:instagram_post_with_videos) { FactoryBot.create(:post, text: 'Video is now live on YouTube enjoy: https://m.youtube.com/watch?v=Qi6wjbKMnRA #lunaFollow', source: 'instagram') }
 
       context 'Twitter post' do
         context 'should render links for regular URLs, hashtag and username' do
@@ -131,7 +131,7 @@ module Dashtag
     context "instagram" do
 
       context 'with video' do
-        let(:post_with_video) { FactoryGirl.create(:post, media_url: nil, text: 'check out this instagram video!', source: 'instagram') }
+        let(:post_with_video) { FactoryBot.create(:post, media_url: nil, text: 'check out this instagram video!', source: 'instagram') }
 
         describe 'embed_instagram_video' do
 
@@ -153,7 +153,7 @@ module Dashtag
       end
 
       context 'with no video' do
-        let(:post_without_video) { FactoryGirl.create(:post, text: 'no video here!', source: 'instagram', media_url: "some media url") }
+        let(:post_without_video) { FactoryBot.create(:post, text: 'no video here!', source: 'instagram', media_url: "some media url") }
 
         describe 'embed_instagram_video' do
           let(:post_without_embedded_video) {helper.embed_instagram_video post_without_video}
@@ -167,7 +167,7 @@ module Dashtag
 
     context "vine" do
       context 'with video' do
-        let(:post_with_video) { FactoryGirl.create(:post, text: 'check out this vine video! #amazing https://vine.co/v/abcde', source: 'twitter') }
+        let(:post_with_video) { FactoryBot.create(:post, text: 'check out this vine video! #amazing https://vine.co/v/abcde', source: 'twitter') }
 
         describe 'vine_extract_id' do
           subject { helper.vine_extract_id post_with_video.text }
@@ -185,7 +185,7 @@ module Dashtag
       end
 
       context 'with no video' do
-        let(:post_without_video) { FactoryGirl.create(:post, text: 'no video here!', source: 'twitter') }
+        let(:post_without_video) { FactoryBot.create(:post, text: 'no video here!', source: 'twitter') }
 
         describe 'vine_embed_twitter' do
           subject { (helper.vine_embed_twitter post_without_video).text }
@@ -195,7 +195,7 @@ module Dashtag
     end
 
     context "youtube" do
-      let(:twitter_post) { FactoryGirl.create(:post, text: '#helpus "@batman and @robin!" #gotham http://youtu.be/a1b2c3d4 http://dccomics.com', source: 'twitter') }
+      let(:twitter_post) { FactoryBot.create(:post, text: '#helpus "@batman and @robin!" #gotham http://youtu.be/a1b2c3d4 http://dccomics.com', source: 'twitter') }
 
       let(:video_embed_code) do
         '<iframe width="560" height="315" src="//www.youtube.com/embed/1-sBRRWBxSg" frameborder="0" allowfullscreen></iframe>'

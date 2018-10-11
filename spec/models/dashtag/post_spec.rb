@@ -13,7 +13,7 @@ module Dashtag
       end
 
       it "should validate that the post is not a retweet" do
-        retweet = FactoryGirl.build(:post,
+        retweet = FactoryBot.build(:post,
           text: "RT @akacharleswade: Pouring rain. So what. Stay in these streets! #UmbrellaRevolution",
           source: "twitter")
         expect{ retweet.save! }.to raise_error()
@@ -27,9 +27,9 @@ module Dashtag
       end
 
       it "should delete oldest post" do
-        oldest_tweet = FactoryGirl.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1980")
-        FactoryGirl.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1990")
-        new_tweet = FactoryGirl.create(:post,
+        oldest_tweet = FactoryBot.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1980")
+        FactoryBot.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1990")
+        new_tweet = FactoryBot.create(:post,
           text: "Pouring rain. So what. #soWhat",
           source: "twitter",
           time_of_post: "Fri Sep 21 23:40:54 +0000 2014")
@@ -38,9 +38,9 @@ module Dashtag
       end
 
       it "should not delete oldest post if new one fails validation" do
-        FactoryGirl.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1990")
-        oldest_tweet = FactoryGirl.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1980")
-        new_tweet = FactoryGirl.build(:post,
+        FactoryBot.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1990")
+        oldest_tweet = FactoryBot.create(:post, time_of_post: "Fri Sep 18 23:40:54 +0000 1980")
+        new_tweet = FactoryBot.build(:post,
           text: "Pouring rain. So what. #soWhat",
           source: "twitter",
           screen_name: nil,
@@ -52,15 +52,15 @@ module Dashtag
     end
 
     it 'should not equal another post when the attributes are different' do
-      gram_one = FactoryGirl.create(:post, source: "instagram")
-      gram_two = FactoryGirl.create(:post, screen_name: "someone_different", source: "instagram")
+      gram_one = FactoryBot.create(:post, source: "instagram")
+      gram_two = FactoryBot.create(:post, screen_name: "someone_different", source: "instagram")
       expect(gram_one).to_not eq(gram_two)
     end
 
     describe "#next_posts" do
-      let!(:third_post) {FactoryGirl.create(:post, created_at: Time.now , text: "will float like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2002")}
-      let!(:second_post) { FactoryGirl.create(:post, created_at: Time.now - 5, text: "float like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2001") }
-      let!(:first_post) { FactoryGirl.create(:post, created_at: Time.now - 10, text: "floated like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2000")}
+      let!(:third_post) {FactoryBot.create(:post, created_at: Time.now , text: "will float like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2002")}
+      let!(:second_post) { FactoryBot.create(:post, created_at: Time.now - 5, text: "float like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2001") }
+      let!(:first_post) { FactoryBot.create(:post, created_at: Time.now - 10, text: "floated like a butterfly", time_of_post: "Sep 18 23:40:54 +0000 2000")}
 
       it 'should get next posts' do
         first_post.id, second_post.id = first_post.id, second_post.id
@@ -89,13 +89,13 @@ module Dashtag
 
     describe "#limited_sorted_posts" do
       it 'should screen posts based on censored words' do
-        post = FactoryGirl.create(:post, text: "somethingBad")
+        post = FactoryBot.create(:post, text: "somethingBad")
         SettingStore.new(censored_words: "somethingBad").store
         expect(Post.limited_sorted_posts 10).to_not include(post)
       end
 
       it 'should screen posts based on censored users' do
-        post = FactoryGirl.create(:post, screen_name: "someoneBad")
+        post = FactoryBot.create(:post, screen_name: "someoneBad")
         SettingStore.new(censored_users: "@someoneBad").store
         expect(Post.limited_sorted_posts 10).to_not include(post)
       end
@@ -115,12 +115,12 @@ module Dashtag
       it "should return only posts after time passed" do
         allow(APIService.instance).to receive(:pull_posts).and_return(true)
 
-        old_post = FactoryGirl.create(:post,
+        old_post = FactoryBot.create(:post,
                     created_at: Time.at(time_of_old_post),
                     time_of_post: Time.at(time_of_old_post),
                     text: "the old post")
 
-        new_post = FactoryGirl.create(:post,
+        new_post = FactoryBot.create(:post,
                     created_at: Time.at(time_of_new_post),
                     time_of_post: Time.at(time_of_new_post),
                     text: "the new post")

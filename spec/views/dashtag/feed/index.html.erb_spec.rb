@@ -21,7 +21,7 @@ module Dashtag
     end
 
 	  it 'displays post screenname correctly' do
-	    @posts =  FactoryGirl.create_list(:random_post, 3)
+	    @posts =  FactoryBot.create_list(:random_post, 3)
 
 	    render
 
@@ -31,7 +31,7 @@ module Dashtag
 	  end
 
 	  it 'displays links to twitter posts' do
-	    @posts =  FactoryGirl.create_list(:random_post, 3)
+	    @posts =  FactoryBot.create_list(:random_post, 3)
 	    render
 		@posts.each do |post|
 	    	rendered.should have_xpath("//a[contains(.,#{post.screen_name})]")

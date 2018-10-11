@@ -133,7 +133,7 @@ module Dashtag
       end
     end
 
-    let(:settings) {FactoryGirl.build(:settings) }
+    let(:settings) {FactoryBot.build(:settings) }
 
     context "when settings are not set in db" do
       it "should load default" do

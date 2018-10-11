@@ -1,5 +1,5 @@
 module Dashtag
-  FactoryGirl.define do
+  FactoryBot.define do
   	factory :post, class: Dashtag::Post do
   		screen_name "cassius_clay"
     	profile_image_url "http://fc00.deviantart.net/fs23/i/2007/334/a/9/Dash_Tag_by_scootinstar28.jpg"

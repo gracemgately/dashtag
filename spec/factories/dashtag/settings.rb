@@ -1,5 +1,5 @@
 module Dashtag
-  FactoryGirl.define do
+  FactoryBot.define do
   	factory :settings, class: Dashtag::Settings do
   	end
   end

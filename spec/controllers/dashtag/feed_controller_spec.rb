@@ -2,9 +2,9 @@ require 'spec_helper'
 
 module Dashtag
   describe FeedController do
-    let(:second_post) { FactoryGirl.create(:post, created_at: Time.now, text: "float like a butterfly", time_of_post: Time.now) }
-    let(:first_post) { FactoryGirl.create(:post, created_at: Time.now - 1, text: "floated like a butterfly", time_of_post: Time.now - 1) }
-    let(:third_post) { FactoryGirl.create(:post, created_at: Time.now + 1, text: "will float like a butterfly", time_of_post: Time.now + 1) }
+    let(:second_post) { FactoryBot.create(:post, created_at: Time.now, text: "float like a butterfly", time_of_post: Time.now) }
+    let(:first_post) { FactoryBot.create(:post, created_at: Time.now - 1, text: "floated like a butterfly", time_of_post: Time.now - 1) }
+    let(:third_post) { FactoryBot.create(:post, created_at: Time.now + 1, text: "will float like a butterfly", time_of_post: Time.now + 1) }
     before(:each) {allow(User).to receive(:owner_exists?) {true}}
     routes { Dashtag::Engine.routes }
 
@@ -20,7 +20,7 @@ module Dashtag
 
           it "should limit number of posts to 100 posts" do
             (0..150).each do |i|
-              FactoryGirl.create(:post, time_of_post: Time.now - i)
+              FactoryBot.create(:post, time_of_post: Time.now - i)
             end
             get :index, :format => :html
             expect(assigns(:posts).count).to eq(100)
@@ -52,12 +52,12 @@ module Dashtag
       it "should return view of new posts" do
         future = @present + 500
         past = @present - 500
-        future_post = FactoryGirl.create(:post, 
+        future_post = FactoryBot.create(:post, 
           created_at: future, 
           text: "float like a butterfly #word", 
           time_of_post: future, 
           source: 'twitter')
-        past_post = FactoryGirl.create(:post, 
+        past_post = FactoryBot.create(:post, 
           created_at: past, 
           text: "float like a butterfly #word", 
           time_of_post: past, 
@@ -85,13 +85,13 @@ module Dashtag
       end
 
       it 'should return a maximum of 100 posts' do
-        (0..150).each { |i| FactoryGirl.create(:post, time_of_post: Time.now - i)}
+        (0..150).each { |i| FactoryBot.create(:post, time_of_post: Time.now - i)}
         get :get_older_posts, last_post_id: third_post.id, :format => :html
         expect(assigns(:posts).count).to eq(100)
       end
 
       it 'should return status not_modified if there are no more posts left' do
-        (0..60).each { |i| FactoryGirl.create(:post, time_of_post: Time.now - i)}
+        (0..60).each { |i| FactoryBot.create(:post, time_of_post: Time.now - i)}
         get :get_older_posts, last_post_id: Post.last.id, :format => :html
 
         expect(response.status).to eq(304)

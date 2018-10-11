@@ -14,7 +14,7 @@ module Dashtag
     end
 
     it "should display post in db" do
-      post = FactoryGirl.create(:post)
+      post = FactoryBot.create(:post)
       visit '/'
 
       page.should have_content(post.text)
@@ -46,8 +46,8 @@ module Dashtag
     end
 
     it 'should display clickable icons for instagram and twitter posts' do
-      twitterPost = FactoryGirl.create(:post, screen_name: "twitterposter", source: "twitter", post_id: 6754)
-      instagramPost = FactoryGirl.create(:post, screen_name: "instagramposter", source: "instagram")
+      twitterPost = FactoryBot.create(:post, screen_name: "twitterposter", source: "twitter", post_id: 6754)
+      instagramPost = FactoryBot.create(:post, screen_name: "instagramposter", source: "instagram")
 
       visit '/'
       twitterCount = Post.where(source: "twitter").count

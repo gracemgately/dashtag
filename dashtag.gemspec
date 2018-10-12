@@ -24,9 +24,13 @@ Gem::Specification.new do |s|
   s.add_dependency "uglifier"
   s.add_dependency "dotenv-rails"
   s.add_dependency "pry"
+  s.add_dependency "pg", "~> 0.18"
+  s.add_dependency "rails_12factor"
 
 
-  s.add_development_dependency "sqlite3"
+
+  s.add_development_dependency "pg", "~> 0.18"
+  s.add_development_dependency "rails_12factor"
   s.add_development_dependency "dotenv-rails"
   s.add_development_dependency "puppet"
   s.add_development_dependency "librarian-puppet"

@@ -1,1 +1,1 @@
-web: bundle exec spec/dummy/bin/rails server -p 30698 -e production
+web: bundle exec spec/dummy/bin/rails server -p $PORT -e production
